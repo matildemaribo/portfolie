@@ -1,0 +1,195 @@
+*{
+    margin: 0; /*afstand mellem elementer*/
+    scroll-behavior: smooth; /*scroll effekt*/
+    text-decoration: none; /*intet link udseende*/
+}
+/*Tekst til site*/
+    /*Overskrift*/
+h1{
+
+}
+    /*Underoverskrift*/
+h2{
+
+}
+    /*Tekst i nav/links*/
+a{
+    font-size: 3vh; /*størrelse*/
+}
+
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+    /*Logo*/
+#logoplaceholder{
+    background-color: grey;
+    width: 20vh;
+    height: 13vh;
+    margin-left: 5vh;
+    margin-top: 2vh;
+}
+    /*Nav bar med indhold*/
+nav a{
+    margin: 3vh; /*afstand mellem elementer*/
+    color: grey; /*tekst farve*/
+    transition: color 0.3s ease-in-out; /*color fade in efter x antal sekunder*/
+}
+nav a:hover{
+    color: pink; /*tekst farve*/
+}
+        /*Kontakt mig knap*/
+a:nth-child(4){ /*VIRKER IKKE*/
+    margin: 10vh; /*afstand mellem elementer*/
+}
+
+/*Main*/
+    /*Top til forside og om mig*/
+.topplaceholder{
+    background-color: rgba(128, 128, 128, 0.452);
+    height: 85vh;
+}
+
+    /*Scroll section*/
+        /*navbar til venstre*/
+#upper-nav {
+    display: none;
+}
+.menu {
+    position: fixed;
+    top: 60%;
+    margin-top: -300px;
+    text-align: center;
+    z-index: 20;
+}
+.menu li {
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 0 10px;
+    font-family: Arvo;
+    line-height: 9.5vh;
+    font-weight: 900;
+    text-align: center;
+    padding-left: 28px;
+    cursor: pointer;
+    font-size: 1em !important;
+}
+.menu li.light-menu {
+    border-bottom: 0.1em solid #ffffff;
+    margin: auto; 
+}
+.menu li.light-menu:hover {
+    border-bottom: 3px solid #ffffff;
+}
+        /*indhold på sectioner*/
+.slide {   
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+#scroll1 {
+    background-image: linear-gradient(pink, rgb(124, 234, 124));
+    z-index: 0;
+}
+#scroll2{
+    background-image: linear-gradient(pink, rgb(124, 234, 124));
+    z-index: 0;
+}
+#scroll3{
+    
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 0;
+}
+.describtion {
+    color: aliceblue;
+    font-family: inter;
+    font-size: 1.2em;
+    line-height: 2em;
+ }
+.model-name {
+    color: rgb(255, 255, 255);
+    font-family: poller one;
+    font-size: 5em;
+    text-align: center;
+}
+.læsmere {
+    background-color: rgba(212, 152, 36, 1);
+    border: solid rgba(212, 152, 36, 1);
+    border-radius: 30px;
+    line-height: 2.5em;
+    padding: 1.5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    margin-top: 10%;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 90%;
+    cursor: pointer;
+  /* margin-bottom: 3%; */
+    width: 50%;
+    transition-duration: 350ms;
+}
+.læsmere:hover {
+    background-color: #8EA95D;
+    border: solid #8EA95D;
+}
+
+    /*Indholds sectioner*/
+.indhold{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:98vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.tekstdel{
+    width: 50%;
+    padding: 5vh;
+}
+.billededel{
+    width: 50%;
+    padding: 5vh;
+}
+
+/*Knapper*/
+    /*knap 1 header*/
+.knap1{
+    background-color: pink;
+    border: 0.3vh pink;
+    border-radius: 30vh;
+    transition: background-color 0.3s ease-in-out; /*color fade in efter x antal sekunder*/
+    padding: 1vh;
+}
+.knap1:hover{
+    background-color: grey;
+}
+
+/*Image*/
+img{
+    height: 100%;
+    width: 100%;
+}
+
+/*Responsive*/
+    /*Desktop*/
+@media screen and (max-width: 768px) {
+
+}
+
+    /*Mobil*/
+@media screen and (max-width: 480px) {
+
+}
