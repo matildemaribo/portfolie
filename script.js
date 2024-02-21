@@ -1,49 +1,4 @@
-function show() {
-    document.getElementById('sidebar').classList.toggle('active');
-  }
-  
-  
-  document.addEventListener('scroll', function () {
-    var nav = document.getElementById('upper-nav');
-    var visibleSection = null;
-  
-    for (var i = 1; i <= 10; i++) {
-      var sectionId = 'section' + i;
-      var section = document.getElementById(sectionId);
-  
-      if (section) {
-        var rect = section.getBoundingClientRect();
-  
-        if (rect.top <= window.innerHeight && rect.bottom >= window.innerHeight) {
-          visibleSection = section;
-  
-          // Reset the color of all pic elements
-          for (var j = 1; j <= 10; j++) {
-            var allpicElements = document.querySelectorAll('#pic' + j);
-            allpicElements.forEach(function (picElement) {
-              picElement.style.color = ''; // Reset color to default
-            });
-          }
-  
-          // Set the color of current section's pic elements
-          var picElements = document.querySelectorAll('#pic' + i);
-          picElements.forEach(function (picElement) {
-            picElement.style.color = '#D49824';
-          });
-  
-          break; // Exit the loop if a visible section is found
-        }
-      }
-    }
-  
-    if (visibleSection && window.scrollY > 600) {
-      nav.style.display = 'block';
-    } else {
-      nav.style.display = 'none';
-    }
-  });
-  
-  
+
   const isElementInViewport = (el) => {
     const rect = el.getBoundingClientRect();
     return (
@@ -76,3 +31,30 @@ function show() {
   window.addEventListener('scroll', () => {
     handleFadeIn();
   });
+
+  /*aktiv bjælke*/
+  let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.getElementsByClassName("slides");
+  let text = document.getElementsByClassName("text");
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  for (let i = 0; i < text.length; i++) {
+    text[i].style.display = "none";  
+  }
+
+  slides[slideIndex - 1].style.display = "block";  
+  text[slideIndex - 1].style.display = "block";  
+
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
