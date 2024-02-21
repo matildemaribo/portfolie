@@ -326,9 +326,29 @@ nav a:hover{
     background-color: rgba(199, 81, 77, 1);
 }
 
-.ikon{
-    width: 50%;
-    height: 50%;
+.ikon{ /*Hvorfor sker der ikke noget med størrelsen?!*/
+    max-width: 55%; /* Juster størrelsen efter dine præferencer */
+    height: auto; /* Bevarer billedets proportioner */
+}
+.navfooter{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgba(48, 44, 75, 1);
+    width: 100%;
+    z-index: 100;
+    height: max-content;
+    margin-top: 13vh;
+}
+.navfooter a{
+    color: white;
+    font-weight: 100;
+}
+.navfooter h3{
+    text-align: right;
+    color: white;
+    font-weight: 100;
+    padding-left: 65vh;
 }
 
 /*Knapper*/
