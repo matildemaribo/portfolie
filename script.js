@@ -58,3 +58,44 @@ function showSlides() {
 
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+/**Galleri */
+document.addEventListener('DOMContentLoaded', function() {
+  const galleri = document.querySelector('.galleri');
+  const bokse = galleri.querySelectorAll('.boks');
+  const pileVenstre = galleri.querySelector('.venstre');
+  const pileHojre = galleri.querySelector('.hojre');
+  let currentIndex = 0;
+
+  function visBokse(startIndex) {
+    bokse.forEach(function(boks, index) {
+      if (index >= startIndex && index < startIndex + 4) {
+        boks.classList.add('synlig');
+      } else {
+        boks.classList.remove('synlig');
+      }
+    });
+  }
+
+  // Pileklikhåndterere
+  pileVenstre.addEventListener('click', function() {
+    if (currentIndex > 0) {
+      currentIndex -= 1;
+      visBokse(currentIndex);
+    }
+  });
+
+  pileHojre.addEventListener('click', function() {
+    if (currentIndex < bokse.length - 4) {
+      currentIndex += 1;
+      visBokse(currentIndex);
+    }
+  });
+
+  // Vis de første 4 bokse
+  visBokse(currentIndex);
+});
+
+
+
+
