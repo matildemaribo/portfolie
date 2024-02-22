@@ -516,6 +516,170 @@ nav a:hover{
     z-index: 3;
 }
 
+/*Portfolie siden*/
+    /*Titel*/
+.top{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(48, 44, 75, 1);
+    height: 92.5vh;
+    z-index: -10;
+}
+#roedtekst{
+    color: rgba(199, 81, 77, 1);
+    margin-bottom: -6vh;
+    padding-top: 2vh;
+    font-size: 20vh;
+}
+#titelroedsmal{
+    background-color: rgba(199, 81, 77, 1);
+    color: white;
+    padding: 1vh;
+    margin-left: 15vh;
+    margin-right: 15vh;
+}
+#titelroedsmal h1{
+    font-size: 10vh;
+}
+    /*Cirkel*/
+#gulcirkel{
+    background-color: rgba(255, 228, 36, 1);
+    border-radius: 100%;
+    width: 60vh;
+    height: 60vh;
+    text-align: center;
+    margin-top: 38vh;
+    margin-left: 40vh;
+}
+#cirkelimg{
+    background-color: rgba(65, 65, 65, 1);
+    border-radius: 100%;
+    width: 50vh;
+    height: 50vh;
+    text-align: center;
+    position: relative;
+    top: 8%;
+    left: 9%;
+    z-index: 3;
+}
+#gultbaand{
+    background-color:rgba(255, 228, 36, 1);
+    width: 70vh;
+    height: 12vh;
+    text-align: center;
+    z-index: 1;
+    margin-left: -18vh;
+    margin-top: -3vh;
+    text-align: center;
+}
+#gultbaand h2{
+    padding: 4vh;
+    text-transform: uppercase;
+    padding-left: 20vh;
+}
+#hvidtekst{
+    width: 120%;
+    color: white;
+    text-align: left;
+    font-size: 2.5vh;
+    margin-left: 12vh;
+    text-transform: none;
+    padding: 4vh;
+    margin-left: 22.5vh;
+    margin-top: 2vh;
+    line-height: 3.5vh;
+}
+    /*Kragelund mose sektion*/
+#groengrund{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(45, 96, 88, 1);
+    height: 100vh;
+    z-index: -2;
+}
+.projekt{
+    width: 45%;
+    height: 100vh;
+    text-align: center;
+    margin-left: 5vh;
+}
+.projekt h2{
+    text-transform: uppercase;
+    margin-top: 12vh;
+    font-size: 6vh;
+}
+.indholdscontainer{
+    background-color: white;
+    width: 80%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2.5vh;
+}
+#videocontainer{
+    padding-top: 23%;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Sikrer, at videoen fylder hele boksen uden at blive strakt eller skåret */
+}
+.blaabaand{
+    width: 45%;
+    height: 100vh;
+    margin-left: 5vh;
+    background-color: rgba(48, 44, 75, 1);
+}
+.tekstgraa{
+    background-color: rgb(173, 173, 173);
+    width: 100%;
+    height: 85%;
+    margin-top:8vh;
+    color: black;
+}
+.tekstgraa p{
+    width: 90%;
+    margin-left: 3vh;
+    font-size: 2.2vh;
+    line-height: 4vh;
+}
+.tekstgraa h2{
+    margin-top: 2vh;
+    margin-left: 3vh;
+}
+#sortgrund{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    z-index: -2;
+    color: white;
+}
+#sortgrund h2{
+
+}
+#graaboks{
+    background-color: rgb(18, 18, 18);
+    width: 110vh;
+    height:50vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(65, 65, 65, 0.8); /* Drop shadow */
+    box-shadow: 2px 4px 10px rgba(65, 65, 65, 0.8); /* Drop shadow */
+}
+.ditur{
+    width: 110vh;
+    height: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 
 /*Knapper*/
     /*knap 1 header*/
